@@ -1,0 +1,163 @@
+/* https://www.cloudbees.com/blog/remote-origin-already-exists-error */
+
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', 'Courier', 'Helvetica', sans-serif;;
+  background: #fff;
+  /* color: #4B4B4B; */
+  color: #696969;
+}
+
+/* NAVIGATION */
+nav {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #D3D3D3;
+  max-width: 1000px;
+  margin-top: 2em;
+}
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding: 0 1.5em;
+}
+
+nav a {
+  color: #696969;
+}
+
+
+/* NAV MEDIA QUERY */
+@media (min-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+
+
+/* BODY */
+.container {
+  max-width: 1000px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+#main-photo-weather {
+  order: -1;
+}
+
+.main-text > p {
+  margin: 2em 0;
+}
+
+.main-text {
+  text-align: justify;
+}
+
+.main-text h2 {
+  text-align: center;
+}
+
+
+.weather-links {
+  font-size: .85rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 65%;
+}
+
+.weather-links p {
+  display: flex;
+  align-items: center;
+}
+
+.social-images {
+  width: 20px;
+  height: 20px;
+  margin-right: .25em;
+}
+
+#me {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20%;
+  max-width: 300px;
+  opacity: 90%;
+}
+
+
+#location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .75rem;
+  margin-top: -.5em;
+}
+
+#pin {
+  padding: 0 .5em;
+}
+
+@media (min-width: 800px) {
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #main-photo-weather {
+    margin-top: 1em;
+    order: 0;
+    width: 25%;
+    min-width: 300px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-text {
+    width: 60%;
+    padding-right: 1em;
+    text-align: justify;
+  }
+
+  .main-text h2 {
+    text-align: left;
+  }
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+a  {
+  text-decoration: none;
+  color: #4183C4;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
