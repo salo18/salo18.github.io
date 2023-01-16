@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salo Mizrachi</title>
+  <link rel='stylesheet' href='../styles.css'>
+  <script type='module' src='./config.js'></script>
+</head>
+<body>
+  <nav>
+    <h1>Salo Mizrachi</h1>
+    <ul>
+      <li><a href='/'>Home</a></li>
+      <li><a href='/about.html'>About</a></li>
+      <li><a href='/projects.html'>Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class='project-page-container'>
+    <h2>Javascript 30</h2>
+    <p><a href='https://javascript30.com/'>Javascript 30</a> is a thirty day challenge created by Wes Bos.</p> <p>The challenge is to create thirty mini projects using vanilla JS in thirty days!</p>
+    <p>Wes gives an HTML and CSS template to start with and then it's up to me to finish each project.</p>
+
+
+    <!-- INDIVIDUAL PROJECTS -->
+    <!-- DAY 1 -->
+    <div class='project-template'>
+      <h3>Day 1 - (1/15/23) - <a href='/projects/JS30/Day1_Drum_Kit/index.html'>JS Drum Kit</a></h3>
+
+      <a href='/projects/JS30/Day1_Drum_Kit/index.html'><img class='project-page-img left-float' src='/projects/JS30/Day1_Drum_Kit/day1.png' alt='day 1 javascript drum kit'></a>
+
+      <a href='' class='project-links'><p>github repo</p></a>
+      <a href='/projects/JS30/Day1_Drum_Kit/index.html' class='project-links'><p>go to project</p></a>
+
+      <p>This was a great first project. It is a simple design and it was straightforward to work with.</p>
+      <p>Take aways from this project:</p>
+      <ul>
+        <li>More practice with <a href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes'>data attributes</a>.</li>
+        <li>Learned about the <a href='https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement'>HTMLMediaElement</a> and the <a href='https://gomakethings.com/how-to-play-a-sound-with-javascript/'>Audio constructor</a>.</li>
+        <li>Learned about the <kbd>kbd</kbd> keyboard element.</li>
+        <li>Learned about the <a href='https://developer.mozilla.org/en-US/docs/Web/API/Element/transitionend_event'>transitionend</a> event.</li>
+      </ul>
+      <p>My additions to this project:</p>
+      <ul>
+        <li>The keyboard in the original project only responds to keypress events. I added the ability to click on each letter to hear the sound.</li>
+        <li>Made the design responsive for mobile and tablet layouts. This was pretty easy to do with flex-wrap.</li>
+      </ul>
+
+      <p>If I were to extend the functionality of this app, I could:</p>
+      <ul>
+        <li>Allow the user to record the beats they make and send themselves the audio file. I would follow <a href='https://ralzohairi.medium.com/audio-recording-in-javascript-96eed45b75ee'>this guide</a>.</li>
+        <li>Add a metronome sound that can be adjusted to the desired speed to help the user make beats. I would need to research how to do this.</li>
+      </ul>
+    </div>
+
+    <!-- DAY 2 -->
+    <div class='project-template'>
+      <h3>Day 2 - (1/16/23) - <a href='/projects/JS30/Day2_Clock/index.html'>JS Clock</a></h3>
+
+      <a href='/projects/JS30/Day2_Clock/index.html'><img class='project-page-img left-float' src='/projects/JS30/Day2_Clock/day2.png' alt='day 2 javascript clock'></a>
+
+      <a href='' class='project-links'><p>github repo</p></a>
+      <a href='/projects/JS30/Day2_Clock/index.html' class='project-links'><p>go to project</p></a>
+
+      <p>Wes gave the clock design and it was my job to make the hands move according to the time. I am learning a lot by looking at his HTML and CSS and seeing what properties he used to accomplish this clean look. This project was pretty light on the JS and relied mostly on CSS.</p>
+      <p>Take aways from this project:</p>
+      <ul>
+        <li>Practice working with the <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date'>Date constructor</a> and the methods available to it.</li>
+        <li>Used <a href='https://developer.mozilla.org/en-US/docs/Web/API/setInterval'>setInterval</a> to refresh the clock every second.</li>
+        <li>Learned about the <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function'>transition-timing-function</a> property and how to control the speed of an animation or transition.</li>
+        <li>Learned how to adjust different cubic-bezier values in Chrome Developer Tools to get the desired custom values. This is how the seconds hand animates each second but slightly comes back to its previous position with each tick.</li>
+      </ul>
+      <p>My additions to this project:</p>
+      <ul>
+        <li>I added the current date to the clock. Used a <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/z-index'>z-index</a> so that the hands don't go "over" the date as they cycle through the element.</li>
+      </ul>
+    </div>
+
+
+    
+
+
+
+  </div>
+
+
+
+  <!-- <script src='javascript.js'></script> -->
+</body>
+</html>
