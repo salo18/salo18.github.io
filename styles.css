@@ -216,7 +216,6 @@ code {
   flex-direction: column;
 }
 
-
 .project-img {
   margin: 0 auto;
   border-radius: 20%;
@@ -253,6 +252,7 @@ code {
 
 .project-template {
   margin-top: 3em;
+  min-height: 300px;
 }
 
 
